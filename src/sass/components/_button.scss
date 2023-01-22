@@ -1,0 +1,16 @@
+.btn {
+  @include flex(flex, center, center, row, null);
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  @include fonts(var(--text-color-light), 400, 18px, 1.389, null, null, null);
+  background-color: var(--accent-color);
+  &__icon {
+    margin-right: 8px;
+    fill: #ffffff;
+  }
+}

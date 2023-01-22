@@ -1,0 +1,20 @@
+.nav {
+  &__list {
+    @include flex(flex, center, center, row, null);
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+  &__link {
+    @include fonts(var(--text-color-light), 400, 16px, 1.375, null, null, null);
+    &_current {
+      border-bottom: 2px solid var(--accent-color);
+    }
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid var(--accent-color);
+    }
+  }
+}

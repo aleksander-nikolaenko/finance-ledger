@@ -1,0 +1,17 @@
+.logo {
+  @include flex(flex, center, center, row, null);
+
+  &__icon {
+    width: 40px;
+    height: 30px;
+    fill: var(--accent-color);
+  }
+
+  &__text {
+    margin-left: 8px;
+    @include fonts(var(--text-color-light), 400, 28px, 1.357, none, none, none);
+    &_accent {
+      color: var(--accent-color);
+    }
+  }
+}
