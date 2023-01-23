@@ -1,0 +1,25 @@
+.footer {
+  width: 100%;
+  background-color: var(--footer-bg-color);
+  transition: all 250ms;
+
+  &__container {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__social-list {
+    margin-bottom: 12px;
+  }
+  &__text {
+    @include fonts(
+      var(--text-color-light),
+      400,
+      16px,
+      1.35,
+      center,
+      null,
+      null
+    );
+  }
+}

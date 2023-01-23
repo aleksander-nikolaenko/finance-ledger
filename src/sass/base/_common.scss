@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -11,11 +12,10 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color-dark);
-font-family: 'Open Sans', sans-serif;
-font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
 }
 
 body.no-scroll {
   overflow: hidden;
 }
-

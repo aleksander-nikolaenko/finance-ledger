@@ -1,0 +1,30 @@
+.cases {
+  &__container {
+    padding-top: 56px;
+    padding-bottom: 40px;
+  }
+
+  &__pre-title {
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+  }
+  &__text {
+    margin-bottom: 31px;
+    padding-left: 36px;
+    padding-right: 36px;
+    text-align: center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.social-list {
+  @include flex(flex, center, center, row, null);
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+  &__icon {
+    fill: var(--text-color-light);
+    transition: all 250ms;
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+}

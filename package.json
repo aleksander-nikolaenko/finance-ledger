@@ -5,7 +5,9 @@
   "homepage": "https://aleksander-nikolaenko.github.io/finance-ledger",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /finance-ledger/ --no-cache"
+    "build": "parcel build src/*.html --dist-dir dist",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "keywords": [],
   "author": "Alexander",

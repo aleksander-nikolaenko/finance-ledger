@@ -55,12 +55,13 @@
   &__btn {
     margin-left: auto;
     margin-right: auto;
+    opacity: 0.9;
     background-color: var(--accent-color);
     color: var(--text-color-light);
     transition: all 250ms;
     &:hover,
     &:focus {
-      background-color: var(--btn-hover-color);
+      opacity: 1;
     }
   }
 }

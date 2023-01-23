@@ -1,0 +1,36 @@
+.about {
+  &__container {
+    padding-top: 79px;
+    padding-bottom: 79px;
+    background-color: var(--accent-color);
+  }
+
+  &__pre-title {
+    margin-bottom: 16px;
+    color: var(--text-color-light);
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    color: var(--text-color-light);
+  }
+
+  &__text {
+    margin-bottom: 24px;
+    @include fonts(var(--text-color-light), 400, 16px, 1.375, null, null, null);
+  }
+  &__btn {
+    color: var(--text-color-light);
+
+    border: 1px solid var(--text-color-light);
+    border-radius: 5px;
+    background-color: var(--accent-color);
+    transition: all 250ms;
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      background-color: var(--text-color-light);
+      border-color: var(--accent-color);
+    }
+  }
+}

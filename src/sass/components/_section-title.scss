@@ -1,6 +1,0 @@
-.section-title {
-  @include fonts(var(--text-color-dark), 600, 32px, 1.375, center, null, null);
-}
-.section-pre-title {
-  @include fonts(var(--text-color-dark), 400, 16px, 1.375, center, null, null);
-}

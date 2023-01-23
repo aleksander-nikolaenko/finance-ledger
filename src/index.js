@@ -1,11 +1,6 @@
 import './sass/index.scss';
+import { navLinkActions } from './js/navLinkActions.js';
+import { sendingForm } from './js/sendingForm.js';
 
-const headerEl = document.getElementById('header');
-window.onscroll = function () {
-  var scrolled = window.pageYOffset;
-  if (scrolled >= 100) {
-    headerEl.classList.add('bg-visible');
-  } else {
-    headerEl.classList.remove('bg-visible');
-  }
-};
+navLinkActions();
+sendingForm();
