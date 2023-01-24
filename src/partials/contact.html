@@ -1,48 +1,35 @@
 <section id="contact" class="contact contact__section section">
-  <picture>
-    <source
-      type="image/webp"
-      srcset="./images/home/contact.webp 1x, ./images/home/contact@2x.webp 2x"
-    />
-    <source
-      type="image/jpeg"
-      srcset="./images/home/contact.jpg 1x, ./images/home/contact@2x.jpg 2x"
-    />
-
-    <img
-      src="./images/home/contact.jpg"
-      alt="man at table with laptop near window"
-      width="320"
-    />
-  </picture>
   <div class="container contact__container">
-    <h2 class="section-title contact__title">Request Callback</h2>
-    <form
-      name="contact"
-      method="POST"
-      data-netlify="true"
-      class="form contact__form"
-    >
-      <div class="form__field">
-        <input
-          type="text"
-          name="userName"
-          id="user-name"
-          class="form__input"
-          placeholder="Enter your name"
-        />
-      </div>
-      <div class="form__field">
-        <input
-          type="text"
-          name="userEmail"
-          id="user-email"
-          class="form__input"
-          placeholder="Enter email*"
-        />
-        <p class="form__error-message visually-hidden"></p>
-      </div>
-      <button class="btn form__btn" type="submit">Send</button>
-    </form>
+    <div class="contact__image-thumb"></div>
+    <div class="contact__content">
+      <h2 class="section-title contact__title">Request Callback</h2>
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        class="form contact__form"
+      >
+        <div class="form__field">
+          <input
+            type="text"
+            name="userName"
+            id="user-name"
+            class="form__input"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form__field">
+          <input
+            type="text"
+            name="userEmail"
+            id="user-email"
+            class="form__input"
+            placeholder="Enter email*"
+          />
+          <p class="form__error-message visually-hidden"></p>
+        </div>
+        <button class="btn form__btn" type="submit">Send</button>
+      </form>
+    </div>
   </div>
 </section>

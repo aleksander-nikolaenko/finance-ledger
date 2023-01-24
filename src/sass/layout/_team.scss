@@ -1,21 +1,58 @@
 .team {
   &__container {
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 72px;
     padding-bottom: 50px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 50px;
+      padding-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
   }
 
   &__pre-title {
+    width: 103px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 16px;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      width: 114px;
+    }
   }
 
   &__title {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 24px;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      width: 428px;
+    }
   }
   &__text {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 63px;
     text-align: center;
+    @media screen and (min-width: $tablet) {
+      width: 641px;
+      @include fonts(
+        var(--text-color-dark),
+        400,
+        18px,
+        1.33,
+        center,
+        null,
+        null
+      );
+    }
   }
 
   &__social-list {
@@ -35,10 +72,14 @@
       }
     }
   }
-
-  &__item {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    @media screen and (min-width: $tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 18px;
+      grid-row-gap: 18px;
     }
   }
 
@@ -49,6 +90,7 @@
     &:hover,
     &:focus {
       transform: scale(1.02);
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2), 0 0 5px 3px rgb(0, 0, 0);
     }
     &:hover .team__social-list,
     &:focus .team__social-list {
@@ -60,6 +102,9 @@
   &__item-descr-title {
     margin-bottom: 8px;
     @include fonts(var(--text-color-dark), 400, 20px, 1.35, center, null, null);
+    @media screen and (min-width: $tablet) {
+      @include fonts(var(--text-color-dark), 400, 32px, 1, center, null, null);
+    }
   }
 
   &__item-descr-text {
@@ -72,8 +117,16 @@
       null,
       null
     );
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (min-width: $tablet) {
+      @include fonts(
+        var(--text-color-dark),
+        400,
+        18px,
+        1.33,
+        center,
+        null,
+        null
+      );
     }
   }
 }
