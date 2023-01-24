@@ -18,6 +18,14 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url('../images/home/showcase@2x.webp');
     }
+    @media screen and (min-width: $tablet) {
+      padding-top: 378px;
+      padding-bottom: 378px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 272px;
+      padding-bottom: 270px;
+    }
   }
   &__container {
     margin-left: auto;
@@ -25,8 +33,9 @@
   }
 
   &__title {
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 241px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 16px;
     @include fonts(
       var(--text-color-light),
@@ -37,9 +46,24 @@
       null,
       null
     );
+    @media screen and (min-width: $tablet) {
+      width: 523px;
+      @include fonts(
+        var(--text-color-light),
+        600,
+        55px,
+        1.364,
+        center,
+        null,
+        null
+      );
+    }
   }
 
   &__text {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 24px;
     @include fonts(
       var(--text-color-light),
@@ -50,6 +74,30 @@
       null,
       null
     );
+    @media screen and (min-width: $tablet) {
+      width: 523px;
+      @include fonts(
+        var(--text-color-light),
+        400,
+        40px,
+        1.2,
+        center,
+        null,
+        null
+      );
+    }
+    @media screen and (min-width: $desktop) {
+      width: 799px;
+      @include fonts(
+        var(--text-color-light),
+        400,
+        40px,
+        1.35,
+        center,
+        null,
+        null
+      );
+    }
   }
 
   &__btn {
