@@ -3,7 +3,16 @@ export const navLinkActions = () => {
   const sectionList = document.querySelectorAll('.section');
   const header = document.querySelector('.header');
 
-  const headerHeight = header.clientHeight;
+  let headerHeight = header.clientHeight;
+  let timeOutFunctionId;
+  window.addEventListener('resize', () => {
+    const workAfterResizeIsDone = () => {
+      headerHeight = header.clientHeight;
+    };
+    clearTimeout(timeOutFunctionId);
+    timeOutFunctionId = setTimeout(workAfterResizeIsDone, 500);
+  });
+
   window.scrollY > headerHeight
     ? header.classList.add('bg-visible')
     : header.classList.remove('bg-visible');

@@ -26,5 +26,9 @@
     &:not(:last-child) {
       margin-bottom: 8px;
     }
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
   }
 }

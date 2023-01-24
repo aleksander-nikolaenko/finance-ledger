@@ -1,6 +1,12 @@
 .section-title {
   @include fonts(var(--text-color-dark), 600, 32px, 1.375, null, null, null);
+  @media screen and (min-width: $tablet) {
+    @include fonts(var(--text-color-dark), 600, 40px, 1.2, null, null, null);
+  }
 }
 .section-pre-title {
   @include fonts(var(--text-color-dark), 400, 16px, 1.375, null, null, null);
+  @media screen and (min-width: $tablet) {
+    @include fonts(var(--text-color-dark), 400, 18px, 1.33, null, null, null);
+  }
 }

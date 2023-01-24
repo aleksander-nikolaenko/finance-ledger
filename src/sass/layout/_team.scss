@@ -27,6 +27,13 @@
     opacity: 0;
     transition: all 250ms;
     background-color: transparent;
+    & .social-list__icon {
+      &:hover,
+      &:focus {
+        fill: var(--text-color-light);
+        opacity: 0.8;
+      }
+    }
   }
 
   &__item {
@@ -38,6 +45,11 @@
   &__item-image-wrapper {
     position: relative;
     margin-bottom: 16px;
+    transition: all 250ms;
+    &:hover,
+    &:focus {
+      transform: scale(1.02);
+    }
     &:hover .team__social-list,
     &:focus .team__social-list {
       opacity: 1;
